@@ -1,0 +1,169 @@
+/**
+ * @name IRC
+ * @author noahimhere
+ * @version 1.0.0
+ * @description Discord made to look like "the lounge" IRC, with a few of my minor changes
+*/
+
+
+/* Thank you DevilBro for making DiscordRecolor, all of the colors in this plugin wouldn't have exitsed without him! */
+/* No copyright infringement intended pleasedon'tkillme */
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+
+/* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
+
+:root {
+	--font:						Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;					/*	General Font				*/
+	--settingsicons:			1;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
+	
+	--accentcolor: 				0, 0, 0;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
+	--accentcolor2: 			255,115,250;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
+	--linkcolor: 				0,176,244;				/*	Link Color			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
+	--mentioncolor: 			250,166,26;				/*	Highlight Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--successcolor: 			59,165,92;				/*	Success Color		 - 	default:	59,165,92		 - 	hex:	#3ba55c		*/
+	--warningcolor: 			250,166,26;				/*	Warning Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--dangercolor:  			237,66,69;				/*	Danger Color		 - 	default:	237,66,69		 - 	hex:	#ed4245		*/
+	
+	--textbrightest: 			255,255,255;			/*	Text Color 1		 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
+	--textbrighter: 			222,222,222;			/*	Text Color 2		 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
+	--textbright: 				185,185,185;			/*	Text Color 3		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
+	--textdark: 				140,140,140;			/*	Text Color 4		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
+	--textdarker: 				115,115,115;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
+	--textdarkest: 				80,80,80;				/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
+	
+	--backgroundaccent: 		50,50,50;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		30,30,30;				/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 		20,20,20;				/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	15,15,15;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		10,10,10;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating: 		0,0,0;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+}
+
+
+
+
+.layout-1qmrhw .avatar-6qzftW{
+	display:none;
+
+}
+
+
+
+.layout-1qmrhw{
+	height: 25px !important;
+}
+.layout-1qmrhw .content-1U25dZ .nameAndDecorators-3ERwy2 .name-3Vmqxm .username-i5-wv- .username-u-ebrn desaturate UserColors-10-G89{
+	font-size: 14px !important;
+}
+
+.layout-1qmrhw .avatar-6qzftW .content-1U25dZ .subText-OGOWMj .activityText-1rR-8O{
+	display:none !important;
+
+}
+.activity-2EQDZv{
+	display:none !important;
+
+	color: transparent !important;
+}
+
+.scrollableContainer-15eg7h.webkit-QgSAqd{
+	border-radius: 0px !important;
+	margin: 0px 0px !important;
+	min-height: 52px;
+	max-height: 208px;
+}
+.contents-3ca1mk{
+	color:white !important;
+}
+
+.newMemberBadge-3PdStX{
+	display:none !important;
+}
+
+.avatar-2e8lTP.clickable-31pE3P{
+	display: none !important;
+
+}
+.botTag-2mryIa.botTagRegular-kpctgU.botTag-7aX5WZ.px-MnE_OR{
+	display:none !important;
+	visibility: hidden !important; 
+	width: 0px;
+	height: 0px;
+	padding: 0px 0px;
+}
+
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F, .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F, .expression-picker-chat-input-button.buttonContainer-2lnNiN, .expression-picker-chat-input-button.buttonContainer-2lnNiN{
+	display: none;
+}
+
+/* bunch of input bar stuff because IRC */
+.channelTextArea-1FufC0.channelTextArea-1VQBuV{
+	margin: 0px 0px;
+}
+
+.form-3gdLxP{
+	margin: 0px 0px;
+	padding: 0 0;
+}
+
+.container-YkUktl.gameActivityToggleAdded-Yd-YxC{
+	background-color: var(--channeltextarea-background);
+	margin: 0 0;
+	z-index:  9999999999;
+}
+
+.scroller-3X7KbA.none-2-_0dP.scrollerBase-_bVAAt{
+	display: none;
+}
+.tree-3agP2X{
+	display: none;
+}
+
+.typing-2J1mQU.base-3bcbY3.stop-animation{
+	display:none;
+}
+.typing-2J1mQU.base-3bcbY3{
+	display: none;
+}
+.wrapper-1_HaEi.guilds-2JjMmN{
+	display:none;
+}
+.Servers.sidebar{
+	display:none;
+	width: 0px;
+}
+
+.channelAttachmentArea-HwpkuQ scrollbarGhost-dCZKgZ scrollbar-3vVt8d{
+	display:block;
+}
+
+
+.avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L{
+	display:none;
+}
+
+.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F{
+	display:block;
+}
+
+.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.upload-vLbqu-{
+	min-width: 75px;
+	min-height: 75px;
+	max-width: 125px;
+	max-height: 125px;
+}
+
+.channelAttachmentArea-HwpkuQ.scrollbarGhost-dCZKgZ.scrollbar-3vVt8d{
+	padding: 5px;
+}
+
+.icon-2bPCaV.imageContainer-ZRSemj.webcode-3EYK4X{
+	background-image: url(/assets/6b35b41….svg) !important;
+}
+
